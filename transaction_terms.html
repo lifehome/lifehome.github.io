@@ -17,7 +17,7 @@
       box-shadow: 3px 3px 3px rgb(244, 205, 78);
     }
     .card-deck{ margin: 8px 0; }
-    ol.chapterList{ counter-reset: item; padding: 0 13px }
+    ol.chapterList{ counter-reset: item; padding: 0 21px }
     li.chapterItem{ display: block }
     li.chapterItem:before{ content: counters(item, ".") " "; counter-increment: item }
   </style>
@@ -112,23 +112,58 @@
                 <li>Surcharge Tariff for value-added services</li>
               </ol>
             </li>
+            <li class="chapterItem">You acknowledge and agree to make transaction and/or deals, with an individual legal entity "Mr. Ivan Ip", who do business under the name of "Ivan Ip d.b.a hkno.it" and/or "Ivan Ip d.b.a lifehome Studio".</li>
           </ol>
         </li>
         <li class="chapterItem">Restrictions of Payment Methods
           <ol class="chapterList">
-            <li class="chapterItem">The HSBC Bank Transfer payment method, is only provided for clients who have established transactions on or before August 1, 2017. Unless otherwise permitted, all inbound payments using HSBC Bank transfer, are considered as donations, and no refund will be made.</li>
+            <li class="chapterItem">The HSBC Bank Transfer payment method, is only provided for clients who have established transactions on or before August 1, 2017.</li>
+            <li class="chapterItem">Unless otherwise permitted, all inbound payments using HSBC Bank transfer, are considered as donations, and no refund will be made.</li>
             <li class="chapterItem">The Alipay payment method is also available to use, but the client will need to pay transaction fees charged by Stripe(tm). To utilize such payment method, clients must raise this matter manually through Telegram or Email, to address such issue.</li>
           </ol>
         </li>
         <li class="chapterItem">Refund procedure
           <ol class="chapterList">
-            <li class="chapterItem">It is considered all sales and transactions are final, and no refund will be made. However, under the following circumstances, we will be offering a partial refund as a courtesy:
+            <li class="chapterItem">It is considered all sales and transactions are final, and no refund will be made;</li>
+            <li class="chapterItem">However, under the following circumstances, we will be offering a partial refund as a courtesy:
               <ol type=a>
                 <li>The goods is broken and/or unusable.</li>
                 <li>The goods is unable to deliver on schedule.</li>
                 <li>The goods is damaged upon delivery.</li>
                 <li>The transaction was made within 23.5 hours, and is the first order of the client.</li>
               </ol>
+            </li>
+          </ol>
+        </li>
+        <li class="chapterItem">Surcharge Tariff table
+          <ol class="chapterList">
+            <li class="chapterItem">Regular value-added services
+              <table class="table table-responsive">
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th>Charges</th>
+                    <th>Charge cycle/period</th>
+                  </tr>
+                </thead>
+                <tbody class="table-hover">
+                  <tr>
+                    <td>Extra IPv4 address</td>
+                    <td>HKD$120 per /32 block</td>
+                    <td>Monthly</td>
+                  </tr>
+                  <tr>
+                    <td>Extra IPv6 address</td>
+                    <td>HKD$120 per /64 block</td>
+                    <td>Monthly</td>
+                  </tr>
+                  <tr>
+                    <td>Server Migration (Incident-based)</td>
+                    <td>HKD$1,200 or up</td>
+                    <td>Basic charge + $800/manday</td>
+                  </tr>
+                </tbody>
+              </table>
             </li>
           </ol>
         </li>
