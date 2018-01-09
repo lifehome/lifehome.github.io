@@ -16,10 +16,11 @@
       transition: box-shadow 0.89s ease;
       box-shadow: 3px 3px 3px rgb(244, 205, 78);
     }
-    .card-deck{ margin: 8px 0; }
+    .card-deck{ margin: 8px 0 }
     ol.chapterList{ counter-reset: item; padding: 0 21px }
     li.chapterItem{ display: block }
     li.chapterItem:before{ content: counters(item, ".") " "; counter-increment: item }
+    div, code{ border-radius:3px }
   </style>
 </head>
 <body>
@@ -101,6 +102,18 @@
       </div>
     </div><!--/paymentMethod -->
     <hr/>
+    <div id="tos">
+      <h2>服務條款</h2>
+      <small>以下部份只提供英文版本。</small>
+      <ol class="chapterList">
+        <li class="chapterItem">Terms of Services
+          <ol class="chapterList">
+            <li class="chapterItem"><code>It seems the alien has eaten this section, we are recovring this soon(tm).</code></li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+    <hr>
     <div id="paymentTerms">
       <h2>交易協議</h2>
       <small>以下部份只提供英文版本。</small>
@@ -114,20 +127,23 @@
                 <li>Surcharge Tariff for value-added services</li>
               </ol>
             </li>
-            <li class="chapterItem">You acknowledge and agree to make transaction and/or deals, with an individual legal entity "Mr. Ivan Ip", who do business under the name of "Ivan Ip d.b.a hkno.it" and/or "Ivan Ip d.b.a lifehome Studio".</li>
+            <li class="chapterItem">You acknowledge and agree to make transaction and/or deals, with an individual legal entity "Mr. Ivan Ip", who do business under the name of "Ivan Ip d.b.a hkno.it" (and/or "Ivan Ip d.b.a lifehome Studio" in legacy contract and products).</li>
+            <li class="chapterItem">To give better understanding and declaration, the service provider "hkno.it" are refering to the individual legal entity "Mr. Ivan Ip", while the benifitee, that is whom receives goods and services from "hkno.it" are referred as "the Customer".</li>
+            <li class="chapterItem">This agreement can be </li>
           </ol>
         </li>
         <li class="chapterItem">Restrictions of Payment Methods
           <ol class="chapterList">
+            <li class="chapterItem">By using the bank transfer payment method in Hong Kong, the Customer must reply the invoice message with the clear image of bank slip. The acceptable types of bank slip are usually: ATM Cash Deposit confirmation slip, Bank Account Deposit confirmation slip; any forgery and invalid bank slip will lead to immediate service termination, and the involve of local enforcement on the criminal investigation for forging documents.</li>
             <li class="chapterItem">The HSBC Bank Transfer payment method, is only provided for clients who have established transactions on or before August 1, 2017.</li>
             <li class="chapterItem">Unless otherwise permitted, all inbound payments using HSBC Bank transfer, are considered as donations, and no refund will be made.</li>
-            <li class="chapterItem">The Alipay payment method is also available to use, but the client will need to pay transaction fees charged by Stripe(tm). To utilize such payment method, clients must raise this matter manually through Telegram or Email, to address such issue.</li>
+            <li class="chapterItem">The Alipay payment method is also available to use, but the client will need to pay transaction fees charged by Stripe(tm). To utilize such payment method, clients must explicitly raise their concern manually through Telegram or Email, to address such issue.</li>
           </ol>
         </li>
         <li class="chapterItem">Refund procedure
           <ol class="chapterList">
             <li class="chapterItem">It is considered all sales and transactions are final, and no refund will be made;</li>
-            <li class="chapterItem">However, under the following circumstances, we will be offering a partial refund as a courtesy:
+            <li class="chapterItem">However, under the following circumstances, we will be offering a partial refund as a good will gesture:
               <ol type=a>
                 <li>The goods is broken and/or unusable.</li>
                 <li>The goods is unable to deliver on schedule.</li>
@@ -140,29 +156,45 @@
         <li class="chapterItem">Surcharge Tariff table
           <ol class="chapterList">
             <li class="chapterItem">Regular value-added services
-              <table class="table table-responsive">
+              <table class="table table-responsive table-sm">
                 <thead>
                   <tr>
                     <th>Service</th>
-                    <th>Charges</th>
-                    <th>Charge cycle/period</th>
+                    <th>Charges per billing cycle</th>
+                    <th>Note</th>
                   </tr>
                 </thead>
                 <tbody class="table-hover">
                   <tr>
                     <td>Extra IPv4 address</td>
-                    <td>HKD$120 per /32 block</td>
-                    <td>Monthly</td>
+                    <td>Paid Monthly<br/><code>HKD$120 per /32</code></td>
+                    <td> - </td>
                   </tr>
                   <tr>
                     <td>Extra IPv6 address</td>
-                    <td>HKD$120 per /64 block</td>
-                    <td>Monthly</td>
+                    <td>Paid Monthly<br/><code>HKD$120 per /128</code></td>
+                    <td> - </td>
                   </tr>
                   <tr>
                     <td>Server Migration (Incident-based)</td>
-                    <td>HKD$1,200 or up</td>
-                    <td>Basic charge + $800/manday</td>
+                    <td>One time payment<br/><code>HKD$1,200 or up</code></td>
+                    <td>Additional Administrative surcharge required</td>
+                  </tr>
+                  <tr>
+                    <td>Domain Backorder (Type: M1, SLA: none)</td>
+                    <td>
+                      One time payment<br/><code>HKD$300 or up</code><br/>
+                      Per manual attempt<br/><code>HKD$450 or up</code>
+                    </td>
+                    <td>Additional New Registration cost required</td>
+                  </tr>
+                  <tr>
+                    <td>Domain Backorder (Type: A5, SLA: Bronze)</td>
+                    <td>
+                      Paid Monthly<br/><code>HKD$8,000 or up</code><br/>
+                      Per manual attempt<br/><code>HKD$3,000 or up</code>
+                    </td>
+                    <td>Additional New Registration cost required</td>
                   </tr>
                 </tbody>
               </table>
@@ -170,7 +202,7 @@
           </ol>
         </li>
       </ol>
-    </div><!--/paymentTerms --> 
+    </div><!--/paymentTerms -->
   </div>
 
   <!-- scripts -->
